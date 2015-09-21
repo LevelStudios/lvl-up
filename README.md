@@ -19,3 +19,5 @@ Run these two commands to install dependencies after
 Run Gulp
 
 	gulp
+
+#### Troubleshooting
