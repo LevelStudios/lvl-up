@@ -21,3 +21,5 @@ Run Gulp
 	gulp
 
 #### Troubleshooting
+
+You may need to uninstall node and re-install it via homebrew if you are recieving errors during the npm/jspm/gulp process.
