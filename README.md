@@ -15,3 +15,7 @@ Run these two commands to install dependencies after
 
 	npm install
 	jspm install -y
+
+Run Gulp
+
+	gulp
