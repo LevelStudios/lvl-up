@@ -1,13 +1,17 @@
 {
   "name": "levelup",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nothign to see here for now",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/levelstudios/lvl-up"
+    },
+  "author": "LevelStudios",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
