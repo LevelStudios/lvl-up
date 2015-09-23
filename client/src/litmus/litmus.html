@@ -2,13 +2,15 @@
 
     <require from="holder"></require>
     <require from="map"></require>
+    <require from="hello"></require>
 
     <div id="top" class="litmus" role="document">
         <header role="banner" >
-
             <holder pattern="ellipsis"></holder>
             <div  class="litmus-container">
             <h1>HTML5 Litmus</h1>
+            <input value.bind="helloVar" placeholder="Test React Rendering"/>
+            <div><hello foo.bind="helloVar"/></div>
             <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
             <map></map>
             </div>

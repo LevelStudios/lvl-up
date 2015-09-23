@@ -84,6 +84,7 @@
       "google-maps-api": "npm:google-maps-api@^1.1.0",
       "moment": "npm:moment@^2.10.6",
       "randomcolor": "npm:randomcolor@^0.4.0",
+      "react": "npm:react@^0.13.3",
       "text": "github:systemjs/plugin-text@^0.0.2"
     },
     "devDependencies": {
