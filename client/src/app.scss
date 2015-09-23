@@ -2,7 +2,7 @@
 
 body{
     color:#444;
-    background-color: #f4f4f4;
+    background-color: #fefafa;
 }
  nav{
     @include clearfix;
@@ -13,7 +13,7 @@ video, audio{
 }
 
 .page-host{
-    padding:5rem 0;
+    padding:2.25rem 0 5rem 0;
 }
 .page{
     @include outer-container;
