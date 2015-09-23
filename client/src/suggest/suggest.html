@@ -1,0 +1,16 @@
+<template>
+  <section class="suggest">
+    <h1>${heading}</h1>
+
+    <div class="suggest-existing">
+      <ul>
+        <li repeat.for="item of suggest.box">${suggestion}</li>
+      </ul>
+    </div>
+
+    <div class="suggest-add">
+      <li>${prompt}</li>
+      <input type="text">
+    </div>
+  </section>
+</template>
