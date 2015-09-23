@@ -1,0 +1,16 @@
+<template>
+    <require from="map"></require>
+    <require from="human-date"></require>
+    <h1>${heading}</h1>
+    <ul>
+        <li repeat.for="suggestion of suggestions">
+            <div class="title">${suggestion.title} in ${suggestion.location.name}</div>
+            <div class="date">${suggestion.date | humanDate}</div>
+            <div class="copy">${suggestion.copy}</div>
+
+        </li>
+    </ul>
+
+    <map></map>
+
+</template>
