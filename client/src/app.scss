@@ -2,7 +2,6 @@
 
 body{
     color:#444;
-    background-color: #fefafa;
 }
  nav{
     @include clearfix;
@@ -18,7 +17,29 @@ video, audio{
 .page{
     @include outer-container;
 }
-
+.plate{
+    position:fixed;
+    z-index: -1;
+    @include filter(blur(10px));
+    top:-10%;
+    left:-10%;
+    right:-10%;
+    bottom:-10%;
+    background-color: #6d695c;
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
+    // background-color:#269;
+    // background-image: linear-gradient(white 2px, transparent 2px),
+    // linear-gradient(90deg, white 2px, transparent 2px),
+    // linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    // linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    // background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    // background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
 // $start: 3em;
 // @each $h in h1, h2, h3, h4, h5, h6{
 //     #{$h} {
@@ -47,3 +68,4 @@ video, audio{
     font-size: 72px;
     margin-top: 50px;
 }
+

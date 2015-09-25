@@ -1,8 +1,51 @@
+$red: #AD141E;
+
 .litmus{
 
     .litmus-container{
         @include outer-container;
     }
+    .litmus-main section{
+        &:first-child{
+            @include span-columns(7);
+        }
+        &:last-child{
+            @include span-columns(5);
+        }
+    }
+
+.litmus-main{
+    article{
+        border-radius: 5px;
+        background-color: rgba(255,255,255,0.2);
+        display: inline-block;
+        margin: 0 0 1em;
+        width: 100%;
+        box-sizing: border-box;
+        padding:10px;
+    }
+    header, footer, .body{
+        color:#444;
+        padding: 0.5em 1em;
+    }
+    .body{
+        background-color:#fff;
+        box-shadow: 0 6px 0 rgba(0,0,0,0.4);
+    }
+    .calling-card{
+        h2{font-size:1.4em;text-align:center;margin:1em 0 0;}
+        h3{text-align:center;}
+    }
+    header{
+        border-radius: 5px 5px 0 0; /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+        @include linear-gradient(135deg, saturate($red, 100%) 0%,  darken($red, 10%) 100%);
+    }
+    footer{
+        border-top:1px solid #e6e6e6;
+        border-radius: 0 0 5px 5px;
+        background-color: #efefef;
+    }
+}
 
     .litmus-inline-headings{
         h1,h2,h3,h4,h5,h6{
@@ -22,18 +65,39 @@
     }
 
     .litmus-list-flex{
+        display:none;
+       column-count: 4;
        @include clearfix;
        li{
-            @include span-columns(3);
-            @include omega(4n);
-            margin-bottom:15px;
+            padding:1em;
+            border:1px solid #ccc;
+            display:inline-block;
+            width:100%;
+            margin-bottom:1em;
        }
     }
+    .masonry-3{
+        column-count: 3;
+    }
+    .masonry-2{
+        column-count: 2;
+    }
 
+    .avatar{
+        width:200px;
+        margin:0 auto;
+        height:200px;
+        border: 12px solid white;
+        overflow:hidden;
+        border-radius:100%;
+        background-color: desaturate( $red , 60% );
+        @include transform(translateY(10%));
+        box-shadow: 0 5px 0 rgba(0,0,0,0.4);
+    }
 }
 
 .map{
     display:block;
-    width: 400px;
+    width: 100%;
     height:200px;
 }
