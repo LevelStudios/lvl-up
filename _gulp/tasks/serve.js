@@ -8,15 +8,4 @@ gulp.task('serve', function (cb) {
     console.log(stderr);
     cb(err);
   });
-    // var started = false;
-    // return nodemon({
-    //     script: 'server/app.js'
-    // }).on('start', function () {
-    //     // to avoid nodemon being started multiple times
-    //     // thanks @matthisk
-    //     if (!started) {
-    //         cb();
-    //         started = true;
-    //     }
-    // });
 });
