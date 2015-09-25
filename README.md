@@ -16,12 +16,9 @@ Run these two commands to install dependencies after
 	npm install
 	jspm install -y
 
-##### Mongodb Installation via homebrew on OSX
-Pulled from [Mongodb docs](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
+Run Gulp
 
-Hombrew install
-
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    gulp
 
 ##### Mongodb Installation via homebrew on OSX
 Pulled from [Mongodb docs](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
@@ -37,9 +34,16 @@ If you already have homebew installed
 Install Mongodb
 
 	brew install mongodb
-Run Gulp
 
-	gulp
+1. Create the data directory.
+    *  ```mkdir -p /data/db```
+2. Set permissions for the data directory.
+If you are still experiencing issues, check the permissions on your cloned branch to make sure you have Read & Write privileges.
+    *  ```sudo chmod 0755 /data/db```
+    *  ```sudo chown mongod:mongod /data/db```
+3. Run Mongodb
+    *  ```mongod```
+
 
 #### Troubleshooting
 
@@ -52,11 +56,4 @@ If you are still experiencing issues, check the permissions on your cloned branc
 
 http://hungred.com/how-to/completely-removing-nodejs-npm/
 
-1. Create the data directory.
-	*  ```mkdir -p /data/db```
-2. Set permissions for the data directory.
-If you are still experiencing issues, check the permissions on your cloned branch to make sure you have Read & Write privileges.
-	*  ```sudo chmod 0755 /data/db```
-	*  ```sudo chown mongod:mongod /data/db```
-3. Run Mongodb
-	*  ```mongod```
+
