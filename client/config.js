@@ -36,10 +36,11 @@ System.config({
     "aurelia-templating-binding": "github:aurelia/templating-binding@0.15.0",
     "aurelia-templating-resources": "github:aurelia/templating-resources@0.15.2",
     "aurelia-templating-router": "github:aurelia/templating-router@0.16.1",
-    "babel": "npm:babel-core@5.8.24",
-    "babel-runtime": "npm:babel-runtime@5.8.20",
+    "babel": "npm:babel-core@5.8.25",
+    "babel-runtime": "npm:babel-runtime@5.8.25",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
-    "core-js": "npm:core-js@0.9.18",
+    "core-js": "npm:core-js@1.1.4",
+    "dmauro/Keypress": "github:dmauro/Keypress@2.1.3",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
     "google-maps-api": "npm:google-maps-api@1.1.0",
@@ -189,7 +190,7 @@ System.config({
     "npm:asap@1.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:babel-runtime@5.8.20": {
+    "npm:babel-runtime@5.8.25": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.5.0": {
@@ -198,6 +199,11 @@ System.config({
       "is-array": "npm:is-array@1.0.1"
     },
     "npm:core-js@0.9.18": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:core-js@1.1.4": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
