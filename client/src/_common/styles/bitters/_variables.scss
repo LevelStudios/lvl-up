@@ -13,7 +13,7 @@ $heading-line-height: 1.2;
 // Other Sizes
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
+$small-spacing: $base-spacing / 3;
 $base-z-index: 0;
 
 // Colors
@@ -41,3 +41,10 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Layers
+$top: 100;
+$mid-top: 80;
+$mid: 60;
+$mid-bottom:40;
+$bottom:20;

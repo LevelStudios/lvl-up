@@ -1,7 +1,11 @@
+audio, video{
+    display:block;
+}
 audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel{
     border-radius:2px;
     background-color:rgba(0,0,0,0.6);
     height:40px;
+
 }
 audio::-webkit-media-controls-mute-button{
 

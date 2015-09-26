@@ -14,10 +14,10 @@ export class HolderCustomElement {
         var color_array = ['monochrome', 'blue', 'green', 'red', 'orange', 'yellow', 'green'];
         var random_color = color_array[Math.floor(Math.random() * color_array.length)];
 
-        // var colors = randomColor({
-        //     count: 10,
-        //     hue: random_color
-        // });
+        var colors = randomColor({
+            count: 10,
+            hue: 'monochrome'//random_color
+        });
         var elems = [];
 
         for (var i = 0; i < 10; i++) {
@@ -37,7 +37,8 @@ export class HolderCustomElement {
                             rx: (j * radius_increment)+'%',
                             ry: (j * (radius_increment * 2))+'%',
                             fill: colors[i],
-                            opacity: '0.' + opacity
+                            opacity: '0.' + opacity,
+                            stroke: '#fef3fa'
                         });
 
                     break;
@@ -49,7 +50,8 @@ export class HolderCustomElement {
                             width: (j*radius_increment)+'%',
                             height: (j*(radius_increment*2))+'%',
                             fill: colors[i],
-                            opacity: '0.' + opacity
+                            opacity: '0.' + opacity,
+                            stroke: '#fef3fa'
                         });
                     break;
 
@@ -60,7 +62,8 @@ export class HolderCustomElement {
                             rx: (j * radius_increment),
                             ry: (j * (radius_increment * 2)),
                             fill: colors[i],
-                            opacity: '0.' + opacity
+                            opacity: '0.' + opacity,
+                            stroke: '#fef3fa'
                         });
                     break;
 
@@ -70,7 +73,8 @@ export class HolderCustomElement {
                             cy: center+'%',
                             r: (j * radius_increment),
                             fill: colors[i],
-                            opacity: '0.' + opacity
+                            opacity: '0.' + opacity,
+                            stroke: '#fef3fa'
                         });
 
                 }

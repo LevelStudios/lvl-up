@@ -2,24 +2,28 @@ import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
 import 'fetch';
 
+
+
 @inject(HttpClient)
-export class Users{
-  heading = 'Github Users';
-  users = [];
+export class Suggestions{
+  heading = 'Suggestion Box';
+  suggestions = [];
 
   constructor(http){
     http.configure(config => {
       config
         .useStandardConfiguration()
-        .withBaseUrl('https://api.github.com/');
+        .withBaseUrl('/api/');
     });
 
     this.http = http;
   }
 
   activate(){
-    return this.http.fetch('users')
+    return this.http.fetch('/suggestions')
       .then(response => response.json())
-      .then(users => this.users = users);
+      .then(suggestions => this.suggestions = suggestions)
+      .then(suggestions => console.log({suggestions}));
+
   }
 }
