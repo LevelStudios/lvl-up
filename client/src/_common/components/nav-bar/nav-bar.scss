@@ -1,11 +1,12 @@
 .page-host{
-    padding-top:3rem
+    padding-top:5rem
 }
 .navbar{
     @include clearfix;
-    background-color:#444;
-    color:#fff;
-    border-bottom:1px solid #ccc;
+    background-color:#fff;
+    color:#444;
+    border-bottom:1px solid #e6e6e6;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.4);
     position:fixed;
     width:100%;
     z-index:$top;
@@ -13,33 +14,18 @@
         line-height:2.25rem;
         height:2.25rem;
         padding:0 0 0 0.7rem;
-        color:#fff;
+        color:#444;
         &:visited, &:active{
-            color:#fff;
+            color:#444;
         }
     }
 }
-.navbar-header{
-    float:left;
-}
-.navbar-toggle{
-    border-radius:0;
-    background-color:#444;
-    border-right:1px solid #ccc;
-}
-.navbar-collapse{
-    float:left;
-}
+
 .navbar-nav{
     height:2.25rem;
     @include clearfix;
+    text-align:center;
     li{
         display:inline-block;
     }
-}
-.navbar-left{
-    float:left;
-}
-.navbar-right{
-    float:right;
 }
