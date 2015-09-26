@@ -17,32 +17,35 @@ $red: #AD141E;
 .litmus-main{
     article{
         border-radius: 5px;
-        background-color: rgba(255,255,255,0.2);
+        background-color: #fff;
         display: inline-block;
         margin: 0 0 1em;
         width: 100%;
-        box-sizing: border-box;
-        padding:10px;
+        border:10px solid rgba(255,255,255,0.2);
+        -webkit-background-clip:  padding-box;
+        -mox-background-clip:     padding-box;
+        -o-background-clip:       padding-box;
+        background-clip:          padding-box;
     }
-    header, footer, .body{
+    header, footer{
         color:#444;
         padding: 0.5em 1em;
     }
     .body{
+        @include clearfix;
+        padding:1.2em 1em;
         background-color:#fff;
-        box-shadow: 0 6px 0 rgba(0,0,0,0.4);
     }
     .calling-card{
         h2{font-size:1.4em;text-align:center;margin:1em 0 0;}
         h3{text-align:center;}
     }
     header{
-        border-radius: 5px 5px 0 0; /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
         @include linear-gradient(135deg, saturate($red, 100%) 0%,  darken($red, 10%) 100%);
+        box-shadow: 0 5px 0 rgba(0,0,0,0.4);
     }
     footer{
         border-top:1px solid #e6e6e6;
-        border-radius: 0 0 5px 5px;
         background-color: #efefef;
     }
 }
@@ -100,4 +103,20 @@ $red: #AD141E;
     display:block;
     width: 100%;
     height:200px;
+}
+
+.dark-holder svg{
+    background-color:$red;
+}
+
+figure{
+    position:relative;
+}
+figcaption{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color:rgba(0,0,0,0.6);
+    color:#f7f7f7;
+    padding:0.5em 1em;
 }

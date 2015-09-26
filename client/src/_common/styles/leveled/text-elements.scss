@@ -2,6 +2,7 @@ blockquote{
     padding:1rem 2rem;
     font-weight:200;
     font-size:1.2em;
+    @include clearfix;
 }
 cite{
     float:right;
