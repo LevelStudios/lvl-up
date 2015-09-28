@@ -13,7 +13,24 @@ $red: #AD141E;
             @include span-columns(5);
         }
     }
-
+.contact-card{
+    position:relative;
+    &:hover .edit{
+        display:block;
+    }
+}
+.edit{
+    display:none;
+    position:absolute;
+    top:4px;
+    right:10px;
+    font-size:1.5em;
+    color:#fff;
+    cursor:pointer;
+    &:hover{
+        text-shadow: 0 2px 0 rgba(0,0,0,0.5)
+    }
+}
 .litmus-main{
     article{
         border-radius: 5px;

@@ -266,7 +266,7 @@
 
 
                 <section>
-                    <article>
+                    <article class="contact-card">
                         <header>
                             <div class="avatar">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -327,11 +327,13 @@
                                     </g>
                                 </svg>
                             </div>
+                            <div class="edit" click.delegate="setActiveEdit()"><i class="fa-edit fa"></i></div>
                         </header>
                         <div class="body">
                             <div class="calling-card"><hello firstname.bind="firstname" lastname.bind="lastname" jobTitle.bind="jobTitle"/></div>
+
                         </div>
-                        <footer>
+                        <footer show.bind="isEditing">
                             <input type="text" value.bind="firstname" placeholder="First Name"/>
                             <input type="text" value.bind="lastname" placeholder="Last Name"/>
                             <input type="text" value.bind="jobTitle" placeholder="Job Title"/>

@@ -13,19 +13,42 @@
     a{
         line-height:2.25rem;
         height:2.25rem;
-        padding:0 0 0 0.7rem;
+        padding:0 0.35 0 0.35rem;
         color:#444;
         &:visited, &:active{
             color:#444;
         }
     }
 }
-
+.navbar .level-up {
+    width:230px;
+    display:inline-block;
+    a{
+        width:150px;
+        height:80px;
+        line-height: 95px;
+        font-size:1.2rem;
+        text-transform:uppercase;
+        background:$red;
+        margin:0 1em;
+        border-radius:2px;
+        display:block;
+        position:absolute;
+        left:50%;
+        top:-55px;
+        @include transform(translateX(-60%));
+        color:#fff;
+        font-weight:900;
+        border:5px white solid;
+        box-shadow: 0 3px 0 rgba(0,0,0,0.4);
+    }
+}
 .navbar-nav{
     height:2.25rem;
     @include clearfix;
     text-align:center;
     li{
+        position:relative;
         display:inline-block;
     }
 }

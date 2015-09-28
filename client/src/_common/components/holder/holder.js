@@ -1,4 +1,5 @@
 // import randomColor from 'randomcolor';
+// import Trianglify from 'trianglify';
 import {customElement, bindable, inject} from 'aurelia-framework';
 
 export class HolderCustomElement {
@@ -10,7 +11,6 @@ export class HolderCustomElement {
     }
 
     getElems() {
-
         var color_array = ['monochrome', 'blue', 'green', 'red', 'orange', 'yellow', 'green'];
         var random_color = color_array[Math.floor(Math.random() * color_array.length)];
 
