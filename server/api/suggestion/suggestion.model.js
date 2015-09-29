@@ -7,10 +7,10 @@ var SuggestionSchema = new Schema({
   title: String,
   content: String,
   likes: Number,
-  date: Date,
+  registered: { type: Date, default: Date.now },
   tags: [String],
   geometry: { type: { type: String, default:'Point' }, coordinates: [Number] },
-  status: String
+  status: Number
 });
 
 module.exports = mongoose.model('Suggestion', SuggestionSchema);
