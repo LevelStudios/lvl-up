@@ -1,5 +1,6 @@
 import React from 'react';
 import {customElement, inject, bindable, noView} from 'aurelia-framework';
+import keypress from 'dmauro/Keypress';
 
 @noView()
 @inject(Element)
@@ -9,7 +10,16 @@ export class HelloCustomElement {
     @bindable lastname
     @bindable jobtitle
 
-    constructor(element) {this.element = element}
+    constructor(element) {
+        this.element = element
+        var listener    = new keypress.Listener();
+
+        listener.sequence_combo("up up down down left right left right b a space", ()=>{
+            this.firstname  = "Detective John";
+            this.lastname   =  "Kimble";
+            this.jobtitle   = "Cop / Kindergarten Teacher"
+        }, true);
+    }
     render() {React.render(<HelloTest firstname={this.firstname} lastname={this.lastname} jobtitle={this.jobtitle}/>, this.element)}
     bind() {this.render()}
     firstnameChanged() {this.render()}
@@ -17,6 +27,7 @@ export class HelloCustomElement {
     jobtitleChanged() {this.render()}
     attached(){this.render()}
 
+    easterCop(){this.render()}
 }
 
 var HelloTest = React.createClass({

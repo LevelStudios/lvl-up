@@ -330,13 +330,13 @@
                             <div class="edit" click.delegate="setActiveEdit()"><i class="fa-edit fa"></i></div>
                         </header>
                         <div class="body">
-                            <div class="calling-card"><hello firstname.bind="firstname" lastname.bind="lastname" jobTitle.bind="jobTitle"/></div>
+                            <div class="calling-card"><hello firstname.two-way="firstname" lastname.two-way="lastname" jobtitle.two-way="jobtitle"/></div>
 
                         </div>
                         <footer show.bind="isEditing">
                             <input type="text" value.bind="firstname" placeholder="First Name"/>
                             <input type="text" value.bind="lastname" placeholder="Last Name"/>
-                            <input type="text" value.bind="jobTitle" placeholder="Job Title"/>
+                            <input type="text" value.bind="jobtitle" placeholder="Job Title"/>
                         </footer>
                     </article>
 
