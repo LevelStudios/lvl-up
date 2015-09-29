@@ -1,16 +1,16 @@
 <template>
 
     <require from="human-date"></require>
-    <h1>${heading}</h1>
-    <ul>
-        <li repeat.for="suggestion of suggestions">
-            <div class="title">${suggestion.title} in ${suggestion.location.name}</div>
-            <div class="date">${suggestion.date | humanDate}</div>
-            <div class="copy">${suggestion.copy}</div>
+    <require from="suggest.html"></require>
 
+    <ul class="suggest-existing">
+        <li repeat.for="suggestion of suggestions">
+            <aside class="trend">${suggestion.likes}</aside>
+            <article>${suggestion.content}</article>
+            <aside class="date">${suggestion.date | humanDate}</aside>
         </li>
     </ul>
 
-
+    <suggest></suggest>
 
 </template>
